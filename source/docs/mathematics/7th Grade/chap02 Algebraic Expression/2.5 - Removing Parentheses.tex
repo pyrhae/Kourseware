@@ -1,0 +1,129 @@
+\documentclass{beamer}
+
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{bm}
+
+\usefonttheme[onlymath]{serif}% 数学公式字体设置
+
+\usetheme[colorblocks]{Verona}
+\title{去括号}
+\subtitle{Removing Parentheses}
+\author{K}
+\date{最后更新:\today}
+\logo{\includegraphics[height=1.2cm]{assets/Pngtree owl double exposure.png}}
+
+\begin{document}
+    \frame{\titlepage}
+
+    \begin{frame}{括号前是加号 - 不变}{根据加法结合律去括号}
+        \begin{alertblock}{加法结合律}
+            $a + (b+c) = (a+b) +c$
+        \end{alertblock}
+        \begin{block}{}
+            $ 7 + (9 + 1) =  \pause (7 + 9 ) +1 = 7 + 9 + 1 $
+            $ 7 + (9 - 1) =  \pause 7 + [9 + (- 1)] = (7+9)+(-1)=7+9-1$
+        \end{block}
+        
+    \end{frame}
+    \begin{frame}{括号前是减号 - 变号}{理解括号前是减号的情况}
+        \begin{columns}[t]
+            \column{0.48\textwidth}
+            \textbf{情景一} \quad 假设你课桌本来里有8本书，两本小说，三本漫画，三本教材。后来
+            学校规定小说不能带，再后来学校规定漫画也不能带，你还可以带几本书？
+
+            \begin{block}{}
+               $ 8 - 2 - 3 = 3$
+            \end{block}
+
+            \column{0.48\textwidth}
+            \textbf{情景二} \quad 假设你课桌本来里有8本书，两本小说，三本漫画，三本教材。后来
+            学校规定小说和漫画不能带，你还可以带几本书？
+
+            \begin{block}{}
+                $8 - (2 + 3) = 8 - 2 - 3 = 3$
+            \end{block}
+        \end{columns}
+        
+        \vspace{5pt}
+        
+        \begin{block}{减去两个数的和，等于分别减去这两个数。}
+        $8 - (-2 + 3) = \pause 8 -(-2)- 3 = 8 +2-3$\\
+        $8 - (2-3) = \pause 8 - [2+(-3)]= 8- 2 - (-3)= 8 -2 + 3$
+        \end{block}
+    \end{frame}
+    \begin{frame}{概括}{Overview}
+
+            \begin{block}{规则}
+                \begin{itemize}
+                    \item 括号前是 “$\bm{+}$” 号，运用加法结合律把
+                    括号和 它前面的“$\bm{+}$”
+                    去掉， 原括号里各项的符号都\alert{不变}。
+                    \item 括号前是 “$\bm{-}$”号，把括号和它前面的
+                     “$\bm{-}$”都去掉，原括号里各项的符号都要\alert{改变}。
+                \end{itemize}
+            \end{block}
+
+
+            \begin{columns}
+                \column{0.49\textwidth}
+                \begin{example}
+                    \begin{itemize}
+                        \item $a+(b+c) = a + b +c$
+                        \item $a+(b-c) = a + b - c$ 
+                        \item $a-(b-c) = a -b + c$ 
+                        \item $a-(-b+c) = a + b -c $
+                    \end{itemize}
+                \end{example}
+
+                \column{0.49\textwidth}
+            \end{columns}
+    \end{frame}
+
+    \begin{frame}{另一种理解方式}{从乘法分配律的角度理解去括号}
+                \begin{alertblock}{}
+                    \begin{itemize}
+                        \item $a+(b+c) = a + b +c$
+                        \item $a+(b-c) = a + b - c$ 
+                        \item $a-(b-c) = a -b + c$ 
+                        \item $a-(-b+c) = a + b -c $
+                    \end{itemize}
+                \end{alertblock}
+
+                \begin{block}{}
+                    \begin{itemize}
+                        \item $a+(b-c) = a + 1 \times (b +c)=a + b + c$
+                        \item $a+(b-c) = a + 1 \times (b -c)=a + b - c$
+                        \item $a-(b-c) = a + (-1) \times (b-c)=a+(-b)+c=a-b+c$ 
+                    \end{itemize}
+                \end{block}
+    \end{frame}
+
+    \begin{frame}{加括号 - Placing Parentheses}{代数的规则是双向的}
+        \begin{alertblock}{}
+            \begin{itemize}
+                \item $a + b +c = a+(b+c)$
+                \item $a + b - c = a+(b-c)$ 
+                \item $ a -b + c= a-(b-c)$ 
+                \item $ a + b -c= a-(-b+c) $
+            \end{itemize}
+        \end{alertblock}
+    \end{frame}
+
+    \begin{frame}{中括号与大括号}{Brackets and Braces}
+        中括号 $[ \  ]$ 和大括号$\{ \}$和小括号的功能是一样的。为了书写清晰，我
+        们用了小括号后用中括号，用了中括号后再用大括号。去括号的法则对中括号
+        大括号也成立。
+    \end{frame}
+
+    \begin{frame}{练习}
+        $8 + \{2 − [12 + (x − 2)]\}$
+
+        \pause
+
+        从里到外
+
+        从外到里
+    \end{frame}
+\end{document}

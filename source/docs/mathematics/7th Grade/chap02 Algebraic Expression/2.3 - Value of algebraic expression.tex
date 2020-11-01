@@ -1,0 +1,87 @@
+\documentclass{beamer}
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{float}
+
+\usetheme{metropolis}
+\title{代数式的值}
+\subtitle{Value of Algebraic Expression}
+\institute{Norsesun Milieu}
+\author{K}
+\date{\today}
+
+\begin{document}
+	\frame{\titlepage}
+	
+	\section{导入：代数式是什么？}
+	\subsection{题目一}
+	\begin{frame}{复习：列代数式}
+		为了开展体育活动，学校要添置一批排球，每班配2个，学校另外
+		留10个。已知学校共有n个班，问总共需要多少个排球？
+		\pause
+		
+		(2n+10)个
+	\end{frame}
+	
+	\begin{frame}{思考:}
+			
+				1.以上(2n+10)中的n表示什么？它可以取哪些数？
+				
+				2.学校有5个班，应添置多少个排球，如何求？
+	\end{frame}
+	
+	\begin{frame}{结论：}
+			
+			当班数n取不同的值时，代数式 $2n+10$ 的计算结果也不同。
+			即代数式的值随着n的改变而改变；只要给定n一个确定的值，
+			代数式2n+10就有唯一确定的值与它对应。
+	\end{frame}
+	
+	\section{何为值(Value)？}
+	\begin{frame}{代数式的值(Value of algebraic expression)}
+		一般的，如果把代数式里的字母用数代入，那么计算后得出得结果
+		叫做代数式的值(Value of algebraic expression)。
+		
+		代数式里得字母可以取各种不同数值，但所取得数值必须使代数式
+		和它表示得数量有实际意义。
+
+		比如 $ \dfrac{s}{v} $ , v不能取零。
+	\end{frame}
+	
+	\section{Practice}
+	\begin{frame}{Practice A}
+		某人买了50元的乘车月票卡，此人乘车次数用 m 表示，记录他每次					乘车后得余额用 n 表示，求：
+		\begin{table}[H]
+			\begin{tabular}{|rr|}
+				\hline
+					乘车次数 $m$ & 月卡余额 $n$(元)  \\
+				\hline
+					1 & 50-0.8  \\
+					2 & 50-1.6 \\
+					3 & 50-2.4 \\
+					4 & 50-3.2 \\
+					...& ... \\
+				\hline
+			
+			\end{tabular}%
+			%\qquad
+			%($a^2 + b^2 = c^2$)
+		\end{table}
+
+			1. m与n之间得关系式。\pause \qquad
+				$ n = 50 - 0.8m $
+			
+			2. 利用上述公式，计算乘了13次车还剩多少元？
+				\pause \\
+				解： 当m=13时，原式= $ 50 - 0.8\times13 = 39.6 $元
+				
+			3. 此人最多能乘几次车？
+				\pause \\
+				由题意可列不等式 $50 - 0.8m\geq0$,求得 $m\leq62.5$次
+	\end{frame}
+	
+	\begin{frame}{Practice B}
+		已知$ x^2 + 3x = -2$, 求多项式 $3x^2 + 9x -1 $的值。
+	\end{frame}
+	
+\end{document}
