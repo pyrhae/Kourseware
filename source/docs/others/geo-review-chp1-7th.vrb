@@ -1,0 +1,18 @@
+\frametitle{利用经纬网定位}\framesubtitle {利用经纬网可以确定地球表面某一点的位置}
+        \begin{columns}
+            \column{0.49\textwidth}
+            黄桥镇的经纬度约为：$(27\degree N, 111\degree E)$。\\
+            \vspace{2em}
+            \alert{伦敦(London)}的经纬度: $(51\degree N, 0\degree)$。科学家们以穿过
+                格林尼治天文台(Greenwich Observatory)旧址的经线作为起始经线，即$0\degree$经线。
+                这个天文台正是位于伦敦。
+
+                \begin{block}{3D 地球(384318-parabola2020)}
+                    \url{http://www.tuxingis.com/wish3dearth.html}\\
+                    \url{http://online.wish3d.com/Wish3DEarth/manage/index.html#//online.wish3d.com/Wish3DEarth/manage/sceneList.html}
+                \end{block}
+            \column{0.49\textwidth}
+            \begin{figure}
+                \includegraphics[width=0.79\textwidth]{assets/royal ovservatory Greenwich.png}
+            \end{figure}
+        \end{columns}

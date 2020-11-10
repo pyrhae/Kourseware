@@ -1,5 +1,6 @@
-\documentclass[11pt]{ctexbeamer}
+\documentclass[10pt]{ctexbeamer}
 
+\usepackage{bm}
 \usepackage{tikz}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -10,3 +11,33 @@
 \author{Norsesun}
 \date{最后更新：\today}
 \logo{\includegraphics[height=1.2cm]{../../../Pngtree owl double exposure.png}}
+
+
+
+\newcommand{\MyBoldmath}[1]{$\bm{#1}$}
+
+\newcommand{\annmark}[1]{%
+    \textcolor{red}{$\bm\langle$#1$\bm\rangle$}%
+}%
+
+\newcommand{\ann}[1]{%
+    \begin{tikzpicture}[remember picture, baseline=-0.75ex]%
+        \node[coordinate] (inText) {};%
+    \end{tikzpicture}%
+    \marginpar{%
+        \renewcommand{\baselinestretch}{1.0}%
+        \begin{tikzpicture}[remember picture]%
+            \definecolor{orange}{rgb}{1,0.5,0}%
+            \draw node[fill=red!20,rounded corners,text width=\marginparwidth] (inNote){\footnotesize#1};%
+    \end{tikzpicture}%
+    }%
+    \begin{tikzpicture}[remember picture, overlay]%
+        \draw[draw = orange, thick]
+            ([yshift=-0.2cm] inText)
+                -| ([xshift=-0.2cm] inNote.west)
+                -| (inNote.west);%
+    \end{tikzpicture}%
+}%
+
+\setlength{\marginparwidth}{2.5cm}
+\renewcommand{\baselinestretch}{1.3}

@@ -1,0 +1,20 @@
+\begin{columns}
+        \column{0.35\textwidth}
+        \begin{center}
+            \Large{你get到了吗?}
+        \end{center}
+        \begin{figure}
+            \includegraphics[width=0.4\textwidth]{../../../general assets/wha.jpg}
+        \end{figure}
+
+            \column{0.63\textwidth}
+                \smartdiagram[descriptive diagram]{
+                    {有理数的定义, 可以表示成两个整数之比的数。},
+                    {有理数的分类, {按符号分为正有理数，零，负有理数，还可以分为整数和分数。}},
+                    {相反数绝对值, 结合数轴加深对概念的理解。},
+                    {比较大小, {两个负数，绝对值大的反而小}},
+                }
+        \end{columns}
+        \begin{center}
+            \small{我们都没有勤奋到要拼天赋的时候。}
+        \end{center}
