@@ -6,6 +6,9 @@
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
 \onehalfspacing
 \geometry{papersize={25cm,25cm}}
 \geometry{left=3cm,right=3cm,top=3cm,bottom=4cm}
@@ -37,12 +40,14 @@
 
 我们可以把有理数看做无限循环的小数。分数可以化成有限小数和无限循环的小数，只要我们把有限小数看做是循环节为0的无限循环小数，那么分数可以看做是无限循环小数。那么有理数就都可以看做是无限循环小数。
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width = .5\textwidth]{decimal.jpg}
-\caption{小数与分数}
-\label{fig:decimal}
-\end{figure}
+\begin{table}[h]
+    \begin{tabular}{@{}cll@{}}
+    \toprule
+        & \cellcolor[HTML]{EFEFEF}有限小数   & \cellcolor[HTML]{FFCCC9}                     \\ \cmidrule(lr){2-2}
+        & \cellcolor[HTML]{EFEFEF}无限循环小数 & \multirow{-2}{*}{\cellcolor[HTML]{FFCCC9}分数} \\ \cmidrule(l){3-3} 
+    \multirow{-3}{*}{小数} & 无限不循环小数                        & 无理数                                          \\ \bottomrule
+    \end{tabular}
+\end{table}
 
 \newpage
 \section{数轴、相反数和绝对值} 

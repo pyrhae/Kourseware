@@ -8,7 +8,6 @@
 \title{第一章的复习}
 \subtitle{Review of Chapter 1}
 
-\definecolor{airforceblue}{rgb}{.36,.54,.66}
 \setbeamertemplate{section in toc}[sections numbered]
 % \setbeamercolor{normal text}{bg=red!20}
 \AtBeginSubsection[\star]
@@ -52,7 +51,7 @@
                 \begin{block}{可以把有理数看做分数吗？}
                     把整数看成是分母为1的分数，
                     那么一个有理数代表着一个形如
-                    $\frac{p}{q}$ (其中p,q为整数)的分数。\alert{
+                    $\frac{p}{q}$ (其中$p$,$q$为整数)的分数。\alert{
                         有理数都可以表示成两个整数之比}。
                 \end{block}
                 $\pi$ 无法表示成两整数之比。$\pi$是\alert{无理数}。
@@ -207,7 +206,7 @@
             
                 \draw [->, thick] (-3.3, 0) 
                     --(0, 0) node[below]{O}
-                    -- (3.3,0) node[right]{\MyBoldmath{x}};
+                    -- (3.3,0) node[right]{\bmc{x}};
                 \draw [fill=black](0, 0) circle (2pt);
     
                 \foreach \x in {-3, -2, -1, 1, 2, 3}
@@ -228,11 +227,11 @@
                 \tikzstyle{every node}=[font=\normalsize, scale=0.6, concept]
                 \node{有理数相关概念}
                 child [concept color=blue!30]{ 
-                    node {绝对值\\(Absolute Value)\\ \MyBoldmath{x}的绝对值写作\MyBoldmath{|x|}。}
+                    node {绝对值\\(Absolute Value)\\ \bmc{x}的绝对值写作\bmc{|x|}。}
                 }
                 child [concept color=red!30]{ 
-                    node {相反数\\(Opposite Number)\\\MyBoldmath{x}的相反数写作\MyBoldmath{-x}。\\
-                    \MyBoldmath{-x}表示负数还是正数？}
+                    node {相反数\\(Opposite Number)\\\bmc{x}的相反数写作\bmc{-x}。\\
+                    \bmc{-x}表示负数还是正数？}
                 }
                 child [concept color=green!30]{ 
                     node {数轴(Number Axis)\\三要素：原点(Origin)，正方向，单位长度。} 
@@ -275,7 +274,7 @@
                     0的绝对值是0。
                 \end{alertblock}
 
-                \small{用数学表达式表示一个数的绝对值\\(比如\MyBoldmath{|a|})去掉绝对值符号后的结果？}
+                \small{用数学表达式表示一个数的绝对值\\(比如\bmc{|a|})去掉绝对值符号后的结果？}
             }
         \end{columns}
     \end{frame}
@@ -317,7 +316,7 @@
         \only<2>{
             \begin{alertblock}{}
                 我们发现，互为相反数的两个数，绝对值相等。即 
-                \alert{\MyBoldmath{|-a| = |a|}}。
+                \alert{\bmc{|-a| = |a|}}。
             \end{alertblock}
         }
     \end{frame}
@@ -327,7 +326,7 @@
         \only<1, 2, 3>{
             % \begin{alertblock}{}
             %     互为相反数的两个数，绝对值相等。即 
-            %     \alert{\MyBoldmath{|-a| = |a|}}，\alert{\MyBoldmath{|a-b| = |b-a|}}。
+            %     \alert{\bmc{|-a| = |a|}}，\alert{\bmc{|a-b| = |b-a|}}。
             % \end{alertblock}
             \begin{figure}
                 \includegraphics[totalheight=1.5cm]{assets/abs.png}
@@ -337,12 +336,12 @@
         \begin{columns}[t]
             \column{0.48\textwidth}
             \begin{block}{}
-                已知 \MyBoldmath{|x-1| + |y+4|=0}，求\MyBoldmath{xy}。
+                已知 \bmc{|x-1| + |y+4|=0}，求\bmc{xy}。
             \end{block}
 
             \only<2->{
-                \textbf{解：} 因为 \MyBoldmath{|x-1|\geq 0} 且
-                    \MyBoldmath{|y+4|\geq 0} \\
+                \textbf{解：} 因为 \bmc{|x-1|\geq 0} 且
+                    \bmc{|y+4|\geq 0} \\
                     \qquad 故 
                     \[
                     \begin{cases}
@@ -350,24 +349,24 @@
                         y+4=0 , y=-4
                         \end{cases}
                     \]
-                    \qquad 所以 \MyBoldmath{xy=(1)\times(-4)=-4}
+                    \qquad 所以 \bmc{xy=(1)\times(-4)=-4}
             }
 
             \column{0.48\textwidth}
             \begin{block}{}
-                \MyBoldmath{a-b}与 \MyBoldmath{b-a}有什么数量关系？
+                \bmc{a-b}与 \bmc{b-a}有什么数量关系？
                 二者的绝对值具有什么几何意义？
             \end{block}
             
             \only<2->{
                 \textbf{解：} 
-                    因为\\ \small{\MyBoldmath{-(a-b)=-a+b=b+(-a)=b-a} ，即
-                    \alert{\MyBoldmath{-(a-b)=b-a}}。
-                    所以\MyBoldmath{a-b}与\MyBoldmath{b-a}
+                    因为\\ \small{\bmc{-(a-b)=-a+b=b+(-a)=b-a} ，即
+                    \alert{\bmc{-(a-b)=b-a}}。
+                    所以\bmc{a-b}与\bmc{b-a}
                     互为相反数。} \\ 
             }
             \only<3>{
-                \MyBoldmath{|a-b|=|b-a|}，\small{在数轴上表示\\
+                \bmc{|a-b|=|b-a|}，\small{在数轴上表示\\
                     \alert{$a$,$b$两点的距离}。举例验证。}
             }
         \end{columns}
@@ -377,14 +376,14 @@
         \begin{columns}
             \column{0.48\textwidth}
                 \begin{block}{}
-                    已知 \MyBoldmath{|a| + |b|=9}，且 \MyBoldmath{|a|=2}, 
+                    已知 \bmc{|a| + |b|=9}，且 \bmc{|a|=2}, 
                 求 $b$ 的值。
                 \end{block}
 
             \column{0.48\textwidth}
             \begin{block}{}
-                已知\MyBoldmath{|a|=3}, \MyBoldmath{|b|=2}, 
-                \MyBoldmath{|c|=1}, 且\MyBoldmath{a<b<c}, 求\MyBoldmath{a},$b$,$c$的值。
+                已知\bmc{|a|=3}, \bmc{|b|=2}, 
+                \bmc{|c|=1}, 且\bmc{a<b<c}, 求\bmc{a},$b$,$c$的值。
             \end{block}
         \end{columns}
     \end{frame}
@@ -411,7 +410,7 @@
                 
                     \draw [->, thick] (-5.3, 0) 
                         --(0, 0) node[below]{O}
-                        -- (5.1,0) node[right]{\MyBoldmath{x}};
+                        -- (5.1,0) node[right]{\bmc{x}};
                     \draw [fill=black](0, 0) circle (2pt);
                     \draw [fill=red](-5, 0) circle (1.5pt);
                     \draw [fill=red](-3, 0) circle (1.5pt);
@@ -443,19 +442,19 @@
         \begin{columns}
             \column{0.48\textwidth}
             \begin{block}{比较下列两组数的大小：}
-                \MyBoldmath{-\dfrac{2}{3}} 与 \MyBoldmath{-\dfrac{3}{4}}\\
-                \MyBoldmath{|-(+2.1)|} 与 \MyBoldmath{-(-2.1)}
+                \bmc{-\dfrac{2}{3}} 与 \bmc{-\dfrac{3}{4}}\\
+                \bmc{|-(+2.1)|} 与 \bmc{-(-2.1)}
             \end{block}
             \begin{block}{看右图：}
-                已知有理数\MyBoldmath{a} 与 \MyBoldmath{b}
-                在数轴上如右图所示，请比较\MyBoldmath{a}, \MyBoldmath{b},
-                \MyBoldmath{-a},\MyBoldmath{-b}的大小。
+                已知有理数\bmc{a} 与 \bmc{b}
+                在数轴上如右图所示，请比较\bmc{a}, \bmc{b},
+                \bmc{-a},\bmc{-b}的大小。
             \end{block}
             \column{0.48\textwidth}
             \begin{tikzpicture}
                 \draw [->, thick] (-3.3, 0) 
                     --(0, 0) node[below]{O}
-                    -- (2.3,0) node[right]{\MyBoldmath{x}};
+                    -- (2.3,0) node[right]{\bmc{x}};
                 \draw [fill=black](0, 0) circle (2pt);
                 \draw [fill=red](-2, 0) circle (1.5pt) node[below]{a};
                 \draw [fill=red](0.6,0) circle (1.5pt) node[below]{b};
@@ -467,7 +466,7 @@
                 用小于号连接如下：\\
                 \only<2>{
                     \centering
-                    \MyBoldmath{a<-b<b<-a}
+                    \bmc{a<-b<b<-a}
                 }
         \end{columns}
     \end{frame}
@@ -529,9 +528,9 @@
     \end{theorem}
     \begin{block}{比如}
         \begin{enumerate}
-            \item \MyBoldmath{5 + 7 = 12, -5+(-7)=-(5+7)=-12}
-            \item<2-| alert@2> \MyBoldmath{-5 + 7 = +(7-5)=2, -7 + 5=-(7-5)=-2}
-            \item \MyBoldmath{0+(-5)=-5}
+            \item \bmc{5 + 7 = 12, -5+(-7)=-(5+7)=-12}
+            \item<2-| alert@2> \bmc{-5 + 7 = +(7-5)=2, -7 + 5=-(7-5)=-2}
+            \item \bmc{0+(-5)=-5}
         \end{enumerate}
     \end{block}
 \end{frame}
@@ -559,10 +558,10 @@
     
     \begin{block}<2>{例题7}
         \begin{enumerate}
-            \item \MyBoldmath{9 - 8 = }
-            \item \MyBoldmath{9+(-8)=}
-            \item \MyBoldmath{15 - 7 = }
-            \item \MyBoldmath{15 + (-7)=}
+            \item \bmc{9 - 8 = }
+            \item \bmc{9+(-8)=}
+            \item \bmc{15 - 7 = }
+            \item \bmc{15 + (-7)=}
         \end{enumerate}
     \end{block}
 \end{frame}
@@ -573,16 +572,16 @@
     \begin{columns}
         \column{0.48\textwidth}
         \begin{theorem}
-            交换律：\MyBoldmath{a + b=b +a}\\
-            结合律：\MyBoldmath{a + b + c = (a+b)+c=a + (b +c)}
+            交换律：\bmc{a + b=b +a}\\
+            结合律：\bmc{a + b + c = (a+b)+c=a + (b +c)}
         \end{theorem}
         
         \column{0.45\textwidth}
-        减法有交换律吗？像\MyBoldmath{a-b= b-a}这样？
+        减法有交换律吗？像\bmc{a-b= b-a}这样？
     \end{columns}
     \begin{alertblock}<2>{}
         \centering
-        \MyBoldmath{a -b = -(b-a)}
+        \bmc{a -b = -(b-a)}
     \end{alertblock}
     
 \end{frame}
@@ -600,7 +599,7 @@
     \frametitle{例题9}
     \framesubtitle{知识点：加减法}
     \begin{block}{}
-        计算: \MyBoldmath{(-2)+(+30)-(-15)-(+27)}
+        计算: \bmc{(-2)+(+30)-(-15)-(+27)}
     \end{block}
 
     \only<2>{
@@ -620,11 +619,11 @@
         \end{figure}
         \column{.38\textwidth}
         \begin{block}{计算}
-            \MyBoldmath{2\times3\times4\times(-5)}
-            \MyBoldmath{2\times3\times(-4)\times(-5)}
-            \MyBoldmath{2\times(-3)\times(-4)\times(-5)}
-            \MyBoldmath{(-2)\times(-3)\times(-4)\times(-5)}
-            \MyBoldmath{2\times3\times4\times(-5)\times0}
+            \bmc{2\times3\times4\times(-5)}
+            \bmc{2\times3\times(-4)\times(-5)}
+            \bmc{2\times(-3)\times(-4)\times(-5)}
+            \bmc{(-2)\times(-3)\times(-4)\times(-5)}
+            \bmc{2\times3\times4\times(-5)\times0}
         \end{block}
     \end{columns}
     \begin{figure}
@@ -639,9 +638,9 @@
         \column{.39\textwidth}
         \begin{block}{}
             \begin{enumerate}
-                \item \MyBoldmath{ab = ba}
-                \item \MyBoldmath{(ab)c = a(bc)}
-                \item \MyBoldmath{a(b+c)= ab+ac}
+                \item \bmc{ab = ba}
+                \item \bmc{(ab)c = a(bc)}
+                \item \bmc{a(b+c)= ab+ac}
             \end{enumerate}
         \end{block}
 
@@ -658,8 +657,8 @@
 \begin{frame}{例题10}{知识点：乘法与乘法运算律}
     \begin{block}{}
         \begin{enumerate}
-            \item \MyBoldmath{(-\dfrac{3}{4})\times(8-\dfrac{1}{3}-4)}
-            \item \MyBoldmath{-11\times(-\dfrac{2}{5})+(-11)\times2\dfrac{3}{5}+(-11)\times(-\dfrac{1}{5})}
+            \item \bmc{(-\dfrac{3}{4})\times(8-\dfrac{1}{3}-4)}
+            \item \bmc{-11\times(-\dfrac{2}{5})+(-11)\times2\dfrac{3}{5}+(-11)\times(-\dfrac{1}{5})}
         \end{enumerate}
     \end{block}
 
@@ -670,7 +669,7 @@
 
 \begin{frame}{例题11}{知识点：乘法与乘法运算律}
     \begin{block}{}
-        \MyBoldmath{(71\dfrac{2}{27})\times(-9)}
+        \bmc{(71\dfrac{2}{27})\times(-9)}
     \end{block}
 
     \begin{figure}
@@ -698,7 +697,7 @@
     \begin{figure}
         \includegraphics[width=.9\textwidth]{assets/reciprocal.png}
     \end{figure}
-    \alert{\MyBoldmath{0}没有倒数。因为0乘以任何数都是0，而不可能是1。}
+    \alert{\bmc{0}没有倒数。因为0乘以任何数都是0，而不可能是1。}
 \end{frame}
 \begin{frame}
     \frametitle{除法(Division)}
@@ -727,7 +726,7 @@
 
 \begin{frame}{例题14}{知识点：除法乘法混合运算}
     \begin{block}{计算}
-        \MyBoldmath{(-3)\times \dfrac{1}{3} \div(-\dfrac{1}{3})\times 3}\\
+        \bmc{(-3)\times \dfrac{1}{3} \div(-\dfrac{1}{3})\times 3}\\
 
         \only<2>{\alert{9}}
     \end{block}
