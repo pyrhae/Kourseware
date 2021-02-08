@@ -1,22 +1,22 @@
-\documentclass{ctexart}
-% \usepackage{bm}
-\usepackage{tikz}
+% \documentclass{ctexart}
+% % \usepackage{bm}
+% \usepackage{tikz}
 
-% \usefonttheme[onlymath]{serif}% 数学公式字体设置
+% % \usefonttheme[onlymath]{serif}% 数学公式字体设置
 
-\begin{document}
+% \begin{document}
 
 
-\begin{tikzpicture}
-    \draw (0,0) circle (2cm);
-    \draw (2,0) circle (2cm);
-    % \clip[draw] (0,0) circle (2cm);
-    % \clip[draw] (2,0) circle (2cm);
-    \foreach \x in {-1,-0.75,-0.5,-0.25,0,0,
-        0.25,0.5,0.75,1,1.25,1.5,1.75,2,2.25,2.5,2.75}
-    \draw[xshift=\x cm]  (-2,2)--(2,-2);
-    \node at (1,0) {$I$};
-\end{tikzpicture}
+% \begin{tikzpicture}
+%     \draw (0,0) circle (2cm);
+%     \draw (2,0) circle (2cm);
+%     % \clip[draw] (0,0) circle (2cm);
+%     % \clip[draw] (2,0) circle (2cm);
+%     \foreach \x in {-1,-0.75,-0.5,-0.25,0,0,
+%         0.25,0.5,0.75,1,1.25,1.5,1.75,2,2.25,2.5,2.75}
+%     \draw[xshift=\x cm]  (-2,2)--(2,-2);
+%     \node at (1,0) {$I$};
+% \end{tikzpicture}
 
 % \raisebox{0pt}[0pt][0pt]{\Large%
 % \textbf{Aaaa\raisebox{-0.3ex}{a}%
@@ -76,6 +76,115 @@
 %         { \draw (0,0) rectangle (2,2); }]
 %         \node at (1,1) {\large X};
 %         \end{tikzpicture}
+
+
+% \end{document}
+
+
+%\documentclass[14pt,handout]{beamer} %去除暂停打印
+\documentclass[14pt]{beamer}
+\usepackage{ctex}
+\usepackage{makecell}
+\usepackage{setspace}
+\usepackage{ulem}
+
+
+\usefonttheme[onlymath]{serif}% 数学公式字体设置
+
+\usecolortheme[RGB={178,34,34}]{structure}% 耐火砖红
+%\usecolortheme[RGB={205,173,0}]{structure}% 土金黄
+\usetheme{Malmoe}
+
+%\newtheorem{thm}{定理}%中文定理包
+%\renewcommand\proofname{证明}%中文定理包
+
+
+\setbeamertemplate{footline}{
+     \begin{beamercolorbox}[sep=1ex]{author in head/foot}
+     \rlap{\textit{\insertshorttitle}}\hfill\insertauthor\hfill\llap{\insertframenumber}%
+     \end{beamercolorbox}%
+}%设置页面底部带页码的infolines
+
+\setbeamertemplate{items}[ball]%item 改为圆点
+\setbeamertemplate{blocks}[rounded][shadow=true]% 更改定理边框
+\setbeamertemplate{navigation symbols}{}% 去除底部工具导航栏
+
+\newcommand {\p} {\par \vspace{1ex}}
+\newcommand {\pp} {\par \vspace{1ex}\pause}
+\newcommand {\red} {\textcolor[RGB]{178,34,34}}
+\newcommand{\tk}[1][2.5]{\,\underline{\mbox{\hspace{#1 cm}}}\,}
+
+
+
+\author{姓名}
+\title{标题}
+\subtitle{副标题}
+\institute{}
+\date{\today}
+
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{}
+  %\small{ %缩小字体
+  \begin{spacing}{1.5}
+    \textbf{例题 }  xxx
+  \end{spacing}
+  %}
+\end{frame}
+
+\begin{frame}{双栏格式}
+  \small{
+  \begin{spacing}{2.2}
+  计算$\dfrac{3}{8} \div 3 \times \dfrac{3}{4}.$\pp
+
+  以下解法是否正确?\pp
+  \vspace{-2ex}
+
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+   \begin{center}
+    % \includegraphics[width=1\textwidth]{图2-8_1.jpg}
+   \end{center}
+  \end{column}\pause
+
+  \begin{column}{0.6\textwidth}
+    \begin{center}
+    % \includegraphics[width=1\textwidth]{图2-8_2.jpg}
+   \end{center}
+  \end{column}
+\end{columns}
+
+  \end{spacing}
+  }
+\end{frame}
+
+
+\begin{frame}{计算解答排版}
+  \small{
+  \begin{spacing}{2.2}
+  \textbf{例题 }计算:\p
+  \vspace{-2ex}
+  (1)$\dfrac{12}{25}\div \dfrac{2}{3}\div \dfrac{6}{5}$; \hspace{5ex} (2)$\dfrac{3}{7}\times \dfrac{5}{6}+\dfrac{5}{14}\div \dfrac{2}{3}$.\pp
+
+  \(
+  \begin{aligned}
+  \textbf{解: }(1)\hspace{1ex} \text{原式}= \pause &\dfrac{12}{25}\times \dfrac{3}{2}\times \dfrac{5}{6}\\ \pause
+                                            = &\dfrac{3}{5}.\\ \pause
+               (2)\hspace{1ex} \text{原式}= \pause &\dfrac{3}{7}\times \dfrac{5}{6}+\dfrac{5}{14}\times \dfrac{3}{2}\\ \pause
+                                            = &\dfrac{5}{14}+\dfrac{15}{28}\\ \pause
+                                            = &\dfrac{25}{28}.
+  \end{aligned}
+  \)
+
+  \end{spacing}
+  }
+\end{frame}
 
 
 \end{document}
